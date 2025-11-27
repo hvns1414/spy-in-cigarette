@@ -5,8 +5,7 @@
 <h1 align="center">🦅 Spyincigarette</h1>
 
 <p align="center">
-  Man-inthe-middle tool
-  <br>
+  Man-in-the-middle tool<br>
   <b>Cross‑Platform • Python Powered • Fully Modular • Developer Friendly</b>
 </p>
 
@@ -22,62 +21,64 @@
 
 # 🔥 Overview
 
-**Spy-butt** is a next‑generation port forwarding engine written in Python.  
-It supports:
-
-
-Perfect for networking tools, C2 redirectors, debugging, development, and penetration testing labs.
+**Spyincigarette** is a next-generation port forwarding engine written in Python.  
+It is perfect for networking tools, C2 redirectors, debugging, development, and penetration testing labs.
 
 ---
 
 # 📦 Features
 
-### 🟦 **Protocol Support**
+### 🟦 Protocol Support
 - `--tcp` or `-g`
 - `--udp` or `-k`  
 (Default: **TCP**)
 
-### 🟪 **Forwarder Modes**
-| Mode | Name | Description |
-|------|------|-------------|
-| **T** | Targetip | Arp poising |
-| **G** | Router | Router |
-| **R** | RESET | Reset arp packet |
-
----
+### 🟪 Forwarder Modes
+| Mode | Name       | Description       |
+|------|------------|-----------------|
+| **T** | Targetip  | ARP poisoning    |
+| **G** | Router    | Router forwarding|
+| **R** | RESET     | Reset ARP packet |
 
 ---
 
 # 📥 Installation
 
-### 👉 **Clone the repository**
+### Clone the repository
 ```bash
 git clone https://github.com/yourname/spy-in-cigarette.git
-cd The-Skull
-👉 Install Python dependencies
-linux bash installer.sh
-windows installer.bat
+cd spy-in-cigarette
+Install Python dependencies
+bash
+
+# Linux
+bash installer.sh
+
+# Windows
+installer.bat
+
+# Or install via pip
 pip install -r requirements.txt
 This project uses only standard Python libraries, but requirements.txt is included for future module expansion.
 
 ▶️ Usage Examples
-🔹 help
+Help
+
+
 python main.py -h
-🔹 using
+Basic Usage
 
-python main.py -t TARget poising ip -g GETWAY
+bash
 
-Add traffic inspection
+python main.py -t <TARGET_IP> -g <GATEWAY_IP>
+Traffic inspection is also supported.
 
-
-
-✔ Cross-Platform Safe
+✔ Cross-Platform Compatibility
 The script is compatible with:
 
-Windows cmd / PowerShell
+Windows CMD / PowerShell
 
-Linux bash / zsh
-
+Linux Bash / Zsh
 
 macOS
 
@@ -86,25 +87,6 @@ Raspberry Pi
 ✔ Stable Threading Engine
 Handles:
 
-Man-in-the-middle
-attack 
-arp poising
-🪪 License
-This project is licensed under the MIT License.
-You are free to modify, distribute, use, and integrate it into your own tools.
+Man-in-the-middle attacks
 
-
-
-MIT License
-
-Copyright (c) 2025 <Your Name>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-...
-👤 Developer
-Author: Your Name
-GitHub: https://github.com/hvns1414
-Email: immi@boxfi.uk
-If you find The-Skull useful, consider giving it a GitHub Star ⭐.
-
-text
+ARP poisoning
