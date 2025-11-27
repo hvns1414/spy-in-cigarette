@@ -1,294 +1,110 @@
-Spy in Cigarette - Python MITM Attack & Network Scanner
+<p align="center">
+  <img src="lg.png" width="200" height="165" alt="The Skull Logo">
+</p>
 
-"Spy in Cigarette" is a Python script that allows you to scan devices in your network and perform a Man-in-the-Middle (MITM) attack. It also includes a loading screen feature for a better user experience.
+<h1 align="center">🦅 Spyincigarette</h1>
 
-Contents
+<p align="center">
+  Man-inthe-middle tool
+  <br>
+  <b>Cross‑Platform • Python Powered • Fully Modular • Developer Friendly</b>
+</p>
 
-Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20Termux%20%7C%20RaspberryPi-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Protocol-TCP%20%7C%20UDP-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Wizard-YES-purple?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/yourname/The-Skull?style=for-the-badge">
+</p>
 
-Requirements
+---
 
-Installation
+# 🔥 Overview
 
-Linux/macOS
+**Spy-butt** is a next‑generation port forwarding engine written in Python.  
+It supports:
 
-Windows
 
-Usage
+Perfect for networking tools, C2 redirectors, debugging, development, and penetration testing labs.
 
-Network Scanning
+---
 
-MITM Attack
+# 📦 Features
 
-Code Explanation
+### 🟦 **Protocol Support**
+- `--tcp` or `-g`
+- `--udp` or `-k`  
+(Default: **TCP**)
 
-Caution
+### 🟪 **Forwarder Modes**
+| Mode | Name | Description |
+|------|------|-------------|
+| **T** | Targetip | Arp poising |
+| **G** | Router | Router |
+| **R** | RESET | Reset arp packet |
 
-Project Overview
+---
 
-Spy in Cigarette is a Python script that provides two main functionalities:
+---
 
-Network Scanning: It scans a given IP range in the network and lists the devices' IP and MAC addresses.
+# 📥 Installation
 
-MITM (Man-in-the-Middle) Attack: It performs ARP spoofing to intercept and modify traffic between a target and a gateway.
+### 👉 **Clone the repository**
+```bash
+git clone https://github.com/yourname/spy-in-cigarette.git
+cd The-Skull
+👉 Install Python dependencies
+linux bash installer.sh
+windows installer.bat
+pip install -r requirements.txt
+This project uses only standard Python libraries, but requirements.txt is included for future module expansion.
 
-Additionally, it provides a loading screen that enhances the user experience by showing an animation during long-running operations.
+▶️ Usage Examples
+🔹 help
+python main.py -h
+🔹 using
 
-Requirements
+python main.py -t TARget poising ip -g GETWAY
 
-To run this project, you need the following requirements:
+Add traffic inspection
 
-Python 3.6 or higher
 
-Pip (Python package manager)
 
-scapy library (for network manipulation)
+✔ Cross-Platform Safe
+The script is compatible with:
 
-Installation
-Linux/macOS
+Windows cmd / PowerShell
 
-Navigate to the project directory.
+Linux bash / zsh
 
-Open the terminal and run the following command:
 
-bash install.sh
+macOS
 
+Raspberry Pi
 
-This will install all the necessary dependencies and set up the environment for you.
+✔ Stable Threading Engine
+Handles:
 
-Windows
+Man-in-the-middle
+attack 
+arp poising
+🪪 License
+This project is licensed under the MIT License.
+You are free to modify, distribute, use, and integrate it into your own tools.
 
-Navigate to the project directory.
 
-Open Command Prompt and run the following command:
 
-install.bat
+MIT License
 
+Copyright (c) 2025 <Your Name>
 
-This will install the required dependencies and prepare the script for execution in a Windows environment.
-
-Usage
-Network Scanning
-
-To scan the devices on your network and list their IP and MAC addresses, use the following command:
-
-python spy_in_cigarette.py -l
-
-MITM Attack
-
-To start a Man-in-the-Middle attack, use the following command, specifying the target IP and the gateway IP:
-
-python spy_in_cigarette.py -t [Target IP] -g [Gateway IP]
-
-
-For example:
-
-python spy_in_cigarette.py -t 192.168.1.10 -g 192.168.1.1
-
-
-This will perform the MITM attack between the target device with IP 192.168.1.10 and the gateway with IP 192.168.1.1.
-
-Code Explanation
-scan_network(network)
-
-Scans the network for devices in the given IP range and lists their IP and MAC addresses.
-
-arp_spoof(target_ip, target_mac, gateway_ip, gateway_mac)
-
-Performs ARP spoofing by poisoning the ARP cache of the target and gateway devices. This redirects traffic through the attacker’s machine.
-
-mitm_attack(target_ip, gateway_ip)
-
-Starts the MITM attack by continuously performing ARP spoofing to intercept traffic between the target device and the gateway.
-
-loading_screen(duration)
-
-Displays a loading animation in the terminal to give the user visual feedback during long-running operations. It shows a spinning wheel (|, /, -, ) to indicate progress.
-
-Caution
-
-This script is intended for educational purposes only and should be used in legally authorized networks.
-
-MITM attacks and ARP spoofing techniques should only be used for network security testing and on networks you own or have explicit permission to test. Using them without permission is illegal in most jurisdictions.
-
-Please act responsibly and always follow ethical hacking principles.
-
-Conclusion
-
-This README.md file provides users with all the necessary instructions to install, use, and understand the project. It also includes usage examples for network scanning and MITM attacks, ensuring that users can quickly get up and running with the project.
-
-Feel free to reach out if you have any questions or feedback!
-
-End
-Güncellenmiş Dosya İsimleri ve İçerikler:
-
-Kod Adı: spy_in_cigarette.py
-
-Install Script:
-
-Linux/macOS: install.sh
-
-Windows: install.bat
-
-README.md: Güncellenmiş proje adı ve açıklamaları içeriyor.
-
-Bu şekilde, projenizin adı "Spy in Cigarette" olarak tüm dosyalarda güncellenmiş oldu. Eğer başka bir şey eklemek isterseniz, memnuniyetle yardımcı olurum!
-
-Şunu dedin:
-readme dosyası daha güzel ve düzgün olsun
-ChatGPT:
-
-Tabii, "Spy in Cigarette" projeniz için daha profesyonel ve düzenli bir README.md dosyası hazırlayalım. Bu versiyon daha temiz, profesyonel bir yapıya sahip olacak ve kullanıcılar için anlaşılması kolay olacak.
-
-Spy in Cigarette - Python MITM Attack & Network Scanner
-
-Spy in Cigarette is a Python tool that allows you to scan your network for connected devices and perform Man-in-the-Middle (MITM) attacks. It also features a loading screen to provide a smooth and professional user experience while the script is running.
-
-Table of Contents
-
-Project Overview
-
-Features
-
-Requirements
-
-Installation
-
-Linux/macOS
-
-Windows
-
-Usage
-
-Network Scanning
-
-MITM Attack
-
-Code Explanation
-
-Caution
-
-License
-
-Project Overview
-
-Spy in Cigarette is a Python-based network monitoring and attack tool. It provides two main functionalities:
-
-Network Scanning: Scans a specified IP range and lists all connected devices with their IP and MAC addresses.
-
-MITM (Man-in-the-Middle) Attack: Performs ARP spoofing to intercept and potentially manipulate the traffic between a target device and the network gateway.
-
-Additionally, Spy in Cigarette includes a loading screen feature, offering a user-friendly experience during long-running operations by displaying a real-time loading animation.
-
-Features
-
-Scan and list all devices connected to your network, showing their IP and MAC addresses.
-
-Perform MITM attacks using ARP spoofing to intercept traffic between a target and the gateway.
-
-Display a professional loading screen to keep users informed during lengthy operations.
-
-Requirements
-
-Before using this script, ensure that you have the following:
-
-Python 3.6 or higher
-
-pip (Python package manager)
-
-scapy library (for network manipulation)
-
-To install the necessary dependencies, run the installation script, as described below.
-
-Installation
-Linux/macOS
-
-Clone the repository or download the project files.
-
-Open a terminal and navigate to the project directory.
-
-Run the following command to install the dependencies and set up the environment:
-
-bash install.sh
-
-
-This will install all required Python libraries listed in requirements.txt.
-
-Windows
-
-Clone the repository or download the project files.
-
-Open Command Prompt and navigate to the project directory.
-
-Run the installation script:
-
-install.bat
-
-
-This script will set up the required dependencies for Windows environments.
-
-Usage
-Network Scanning
-
-To scan your network for connected devices and list their IP and MAC addresses, use the following command:
-
-python spy_in_cigarette.py -l
-
-MITM Attack
-
-To perform a Man-in-the-Middle (MITM) attack, provide the target device's IP and the gateway's IP:
-
-python spy_in_cigarette.py -t [Target IP] -g [Gateway IP]
-
-
-For example:
-
-python spy_in_cigarette.py -t 192.168.1.10 -g 192.168.1.1
-
-
-This command will perform the MITM attack between the target device with IP 192.168.1.10 and the gateway with IP 192.168.1.1.
-
-Code Explanation
-
-scan_network(network):
-
-Scans the provided IP range (network) and lists all connected devices with their corresponding IP and MAC addresses.
-
-arp_spoof(target_ip, target_mac, gateway_ip, gateway_mac):
-
-Executes ARP spoofing, poisoning the ARP tables of both the target and the gateway to intercept their communication and direct it through the attacker's machine.
-
-mitm_attack(target_ip, gateway_ip):
-
-Initiates the MITM attack. It continuously performs ARP spoofing to position the attacker in between the target device and the network gateway.
-
-loading_screen(duration):
-
-Displays a loading animation during long-running operations, informing the user that the process is still ongoing.
-
-Caution
-
-This script is intended for educational purposes only. Unauthorized use of this tool may be illegal in many jurisdictions. You should only run it on networks you own or have explicit permission to test.
-
-Spy in Cigarette should not be used for malicious purposes. Always practice ethical hacking and follow the law.
-
-License
-
-This project is open source and distributed under the MIT License. Feel free to fork, clone, and contribute to the project!
-
-End
-
-Thank you for using Spy in Cigarette! If you encounter any issues or have suggestions for improvement, feel free to open an issue on the GitHub repository
- or contact the author.
-
-Key Improvements in this Version:
-
-Professional Layout: The content is organized with clear headings and subheadings, making it easy to navigate.
-
-Table of Contents: Provides quick access to the key sections of the README.
-
-Clean Code Explanation: Each function is clearly described, so users understand the role of each part of the code.
-
-Caution and License: A more detailed cautionary note, along with a license section, ensures that the project follows ethical and legal guidelines.
-
-This version provides a polished and professional look while maintaining clarity and usability. Let me know if you'd like any further adjustments or additions!
+Permission is hereby granted, free of charge, to any person obtaining a copy
+...
+👤 Developer
+Author: Your Name
+GitHub: https://github.com/hvns1414
+Email: immi@boxfi.uk
+If you find The-Skull useful, consider giving it a GitHub Star ⭐.
+
+text
