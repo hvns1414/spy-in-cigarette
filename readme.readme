@@ -1,122 +1,93 @@
-Spy in Cigarette - Python MITM Attack & Network Scanner
+<p align="center">
+  <img src="lg.png" width="200" height="165" alt="The Skull Logo">
+</p>
 
-"Spy in Cigarette" is a Python script that allows you to scan devices in your network and perform a Man-in-the-Middle (MITM) attack. It also includes a loading screen feature for a better user experience.
+<h1 align="center">🦅 Spyincigarette</h1>
 
-Contents
+<p align="center">
+  Man-in-the-middle tool<br>
+  <b>Cross‑Platform • Python Powered • Fully Modular • Developer Friendly</b>
+</p>
 
-Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20Termux%20%7C%20RaspberryPi-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Protocol-TCP%20%7C%20UDP-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Wizard-YES-purple?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/yourname/The-Skull?style=for-the-badge">
+</p>
 
-Requirements
+---
 
-Installation
+# 🔥 Overview
 
-Linux/macOS
+**Spyincigarette** is a next-generation port forwarding engine written in Python.  
+It is perfect for networking tools, C2 redirectors, debugging, development, and penetration testing labs.
 
-Windows
+---
 
-Usage
+# 📦 Features
 
-Network Scanning
+### 🟦 Protocol Support
+- `--tcp` or `-g`
+- `--udp` or `-k`  
+(Default: **TCP**)
 
-MITM Attack
+### 🟪 Forwarder Modes
+| Mode | Name       | Description       |
+|------|------------|-----------------|
+| **T** | Targetip  | ARP poisoning    |
+| **G** | Router    | Router forwarding|
+| **R** | RESET     | Reset ARP packet |
 
-Code Explanation
+---
 
-Caution
+# 📥 Installation
 
-Project Overview
+### Clone the repository
+```bash
+git clone https://github.com/yourname/spy-in-cigarette.git
+cd spy-in-cigarette
+Install Python dependencies
+bash
+Kodu kopyala
+# Linux
+bash installer.sh
 
-Spy in Cigarette is a Python script that provides two main functionalities:
+# Windows
+installer.bat
 
-Network Scanning: It scans a given IP range in the network and lists the devices' IP and MAC addresses.
+# Or install via pip
+pip install -r requirements.txt
+This project uses only standard Python libraries, but requirements.txt is included for future module expansion.
 
-MITM (Man-in-the-Middle) Attack: It performs ARP spoofing to intercept and modify traffic between a target and a gateway.
+▶️ Usage Examples
+Help
 
-Additionally, it provides a loading screen that enhances the user experience by showing an animation during long-running operations.
+bash
+Kodu kopyala
+python main.py -h
+Basic Usage
 
-Requirements
+bash
+Kodu kopyala
+python main.py -t <TARGET_IP> -g <GATEWAY_IP>
+Traffic inspection is also supported.
 
-To run this project, you need the following requirements:
+✔ Cross-Platform Compatibility
+The script is compatible with:
 
-Python 3.6 or higher
+Windows CMD / PowerShell
 
-Pip (Python package manager)
+Linux Bash / Zsh
 
-scapy library (for network manipulation)
+macOS
 
-Installation
-Linux/macOS
+Raspberry Pi
 
-Navigate to the project directory.
+✔ Stable Threading Engine
+Handles:
 
-Open the terminal and run the following command:
+Man-in-the-middle attacks
 
-bash install.sh
-
-
-This will install all the necessary dependencies and set up the environment for you.
-
-Windows
-
-Navigate to the project directory.
-
-Open Command Prompt and run the following command:
-
-install.bat
-
-
-This will install the required dependencies and prepare the script for execution in a Windows environment.
-
-Usage
-Network Scanning
-
-To scan the devices on your network and list their IP and MAC addresses, use the following command:
-
-python spy_in_cigarette.py -l
-
-MITM Attack
-
-To start a Man-in-the-Middle attack, use the following command, specifying the target IP and the gateway IP:
-
-python spy_in_cigarette.py -t [Target IP] -g [Gateway IP]
-
-
-For example:
-
-python spy_in_cigarette.py -t 192.168.1.10 -g 192.168.1.1
-
-
-This will perform the MITM attack between the target device with IP 192.168.1.10 and the gateway with IP 192.168.1.1.
-
-Code Explanation
-scan_network(network)
-
-Scans the network for devices in the given IP range and lists their IP and MAC addresses.
-
-arp_spoof(target_ip, target_mac, gateway_ip, gateway_mac)
-
-Performs ARP spoofing by poisoning the ARP cache of the target and gateway devices. This redirects traffic through the attacker’s machine.
-
-mitm_attack(target_ip, gateway_ip)
-
-Starts the MITM attack by continuously performing ARP spoofing to intercept traffic between the target device and the gateway.
-
-loading_screen(duration)
-
-Displays a loading animation in the terminal to give the user visual feedback during long-running operations. It shows a spinning wheel (|, /, -, ) to indicate progress.
-
-Caution
-
-This script is intended for educational purposes only and should be used in legally authorized networks.
-
-MITM attacks and ARP spoofing techniques should only be used for network security testing and on networks you own or have explicit permission to test. Using them without permission is illegal in most jurisdictions.
-
-Please act responsibly and always follow ethical hacking principles.
-
-Conclusion
-
-This README.md file provides users with all the necessary instructions to install, use, and understand the project. It also includes usage examples for network scanning and MITM attacks, ensuring that users can quickly get up and running with the project.
-
-Feel free to reach out if you have any questions or feedback!
-
-End    
+ARP poisoning
